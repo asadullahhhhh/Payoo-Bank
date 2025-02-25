@@ -33,11 +33,11 @@
                 <p class="text-gray-400">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
             </div>
             <div class="grid grid-cols-3 gap-4 pb-6">
-                <div class="flex gap-2 justify-center flex-col items-center border border-gray-200 rounded-xl px-[10px] py-[20px]">
+                <div id="money-add" class="flex gap-2 justify-center flex-col items-center border border-gray-200 rounded-xl px-[10px] py-[20px]">
                     <img src="assets/wallet1.png" alt="">
                     <h6 class="text-xs text-gray-700 font-semibold">Add Money</h6>
                 </div>
-                <div class="flex gap-2 justify-center flex-col items-center border border-gray-200 rounded-xl px-[10px] py-[20px]">
+                <div id="out-cash" class="flex gap-2 justify-center flex-col items-center border border-gray-200 rounded-xl px-[10px] py-[20px]">
                     <img src="assets/send1.png" alt="">
                     <h6 class="text-xs text-gray-700 font-semibold">Cashout</h6>
                 </div>
@@ -62,33 +62,59 @@
 
         <section class=" w-[90%] mx-auto mt-8 mb-20">
             <!-- Add Money -->
-            <div>
-                <h2 class="text-lg font-semibold mb-4">Add Moeny</h2>
+            <div id="add-money">
+                <div>
+                    <h2 class="text-lg font-semibold mb-4">Add Moeny</h2>
+                </div>
+                <div class="bg-white p-8 rounded-3xl">
+                        <form action="">
+                            <label class="font-medium text-base text-gray-500" for="number">Select A Bank</label>
+                            <select name="" id="" class="mt-3 mb-4 bg-gray-200 w-full px-4 py-3 rounded-[32px]">
+                                <option value="" disabled selected>Select back</option>
+                                <option value="Bkash" selected>Bkash</option>
+                                <option value="Nogad" selected>Nogad</option>
+                                <option value="DBBL" selected>Rocket</option>
+                            </select>
+                            <br>
+                            <label class="font-medium text-base text-gray-500" for="number">Bank Account Number</label>
+                            <br>
+                            <input id="acc-num" class="mt-3 mb-4 bg-gray-200 w-full px-4 py-3 rounded-[32px]" re type="number" placeholder="Enter 11 digit account number">
+                            <br>
+                            <label class="font-medium text-base text-gray-500" for="number">Amount to Add</label>
+                            <br>
+                            <input id="amount" class="mt-3 mb-4 bg-gray-200 w-full px-4 py-3 rounded-[32px]" re type="number" placeholder="Add Amount to withdraw">
+                            <br>
+                            <label class="font-medium text-base text-gray-500" for="pin">Pin Number</label>
+                            <br>
+                            <input id="pin" class="mt-3 mb-4 bg-gray-200 w-full px-4 py-3 rounded-[32px]" type="text" maxlength="4" placeholder="Enter 4 digit pin number">
+                            <br>
+                            <button id="add-money" class="w-full text-center bg-black py-3 rounded-[32px] text-white font-medium">Add Money</button>
+                        </form>
+                </div>
             </div>
-            <div class="bg-white p-8 rounded-3xl">
-                    <form action="">
-                        <label class="font-medium text-base text-gray-500" for="number">Select A Bank</label>
-                        <select name="" id="" class="mt-3 mb-4 bg-gray-200 w-full px-4 py-3 rounded-[32px]">
-                            <option value="" disabled selected>Select back</option>
-                            <option value="Bkash" selected>Bkash</option>
-                            <option value="Nogad" selected>Nogad</option>
-                            <option value="DBBL" selected>Rocket</option>
-                        </select>
-                        <br>
-                        <label class="font-medium text-base text-gray-500" for="number">Bank Account Number</label>
-                        <br>
-                        <input id="acc-num" class="mt-3 mb-4 bg-gray-200 w-full px-4 py-3 rounded-[32px]" re type="number" placeholder="Enter 11 digit account number">
-                        <br>
-                        <label class="font-medium text-base text-gray-500" for="number">Amount to Add</label>
-                        <br>
-                        <input id="amount" class="mt-3 mb-4 bg-gray-200 w-full px-4 py-3 rounded-[32px]" re type="number" placeholder="Add Amount to withdraw">
-                        <br>
-                        <label class="font-medium text-base text-gray-500" for="pin">Pin Number</label>
-                        <br>
-                        <input id="pin" class="mt-3 mb-4 bg-gray-200 w-full px-4 py-3 rounded-[32px]" type="text" maxlength="4" placeholder="Enter 4 digit pin number">
-                        <br>
-                        <button id="add-money" class="w-full text-center bg-black py-3 rounded-[32px] text-white font-medium">Add Money</button>
-                    </form>
+
+            <!-- Cash Out-->
+            <div id="cash-out">
+                <div>
+                    <h2 class="text-lg font-semibold mb-4">Cash Out</h2>
+                </div>
+                <div class="bg-white p-8 rounded-3xl">
+                        <form action="">
+                            <label class="font-medium text-base text-gray-500" for="number">Agent Number</label>
+                            <br>
+                            <input id="cash-acc" class="mt-3 mb-4 bg-gray-200 w-full px-4 py-3 rounded-[32px]" re type="number" placeholder="Enter 11 digit number">
+                            <br>
+                            <label class="font-medium text-base text-gray-500" for="number">Amount</label>
+                            <br>
+                            <input id="cash-amount" class="mt-3 mb-4 bg-gray-200 w-full px-4 py-3 rounded-[32px]" re type="number" placeholder="Enter amount to withdraw">
+                            <br>
+                            <label class="font-medium text-base text-gray-500" for="pin">Pin Number</label>
+                            <br>
+                            <input id="cash-pin" class="mt-3 mb-4 bg-gray-200 w-full px-4 py-3 rounded-[32px]" type="text" maxlength="4" placeholder="Enter 4 digit pin number">
+                            <br>
+                            <button id="cash-btn" class="w-full text-center bg-black py-3 rounded-[32px] text-white font-medium">Withdraw Money</button>
+                        </form>
+                </div>
             </div>
         </section>
     </main>
@@ -119,6 +145,8 @@
 
 
 
+    <script src="js/toggle.js"></script>
     <script src="js/addMoney.js"></script>
+    <script src="js/cashout.js"></script>
 </body>
 </html>
