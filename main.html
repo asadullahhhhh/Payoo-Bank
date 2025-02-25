@@ -16,7 +16,7 @@
                     <img class="w-9" src="assets/Group.png" alt="">
                 </div>
                 <div>
-                    <h2 class="font-extrabold text-lg">$ <span>4500</span></h2>
+                    <h2 class="font-extrabold text-lg">$ <span id="balance">4500</span></h2>
                     <p class="text-xs text-gray-400">Available Balance</p>
                 </div>
             </div>
@@ -77,20 +77,48 @@
                         <br>
                         <label class="font-medium text-base text-gray-500" for="number">Bank Account Number</label>
                         <br>
-                        <input id="number" class="mt-3 mb-4 bg-gray-200 w-full px-4 py-3 rounded-[32px]" re type="number" placeholder="Enter 11 digit account number">
+                        <input id="acc-num" class="mt-3 mb-4 bg-gray-200 w-full px-4 py-3 rounded-[32px]" re type="number" placeholder="Enter 11 digit account number">
                         <br>
                         <label class="font-medium text-base text-gray-500" for="number">Amount to Add</label>
                         <br>
-                        <input id="number" class="mt-3 mb-4 bg-gray-200 w-full px-4 py-3 rounded-[32px]" re type="number" placeholder="Add Amount to withdraw">
+                        <input id="amount" class="mt-3 mb-4 bg-gray-200 w-full px-4 py-3 rounded-[32px]" re type="number" placeholder="Add Amount to withdraw">
                         <br>
                         <label class="font-medium text-base text-gray-500" for="pin">Pin Number</label>
                         <br>
                         <input id="pin" class="mt-3 mb-4 bg-gray-200 w-full px-4 py-3 rounded-[32px]" type="text" maxlength="4" placeholder="Enter 4 digit pin number">
                         <br>
-                        <button id="log-btn" class="w-full text-center bg-black py-3 rounded-[32px] text-white font-medium">Add Money</button>
+                        <button id="add-money" class="w-full text-center bg-black py-3 rounded-[32px] text-white font-medium">Add Money</button>
                     </form>
             </div>
         </section>
     </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/addMoney.js"></script>
 </body>
 </html>
