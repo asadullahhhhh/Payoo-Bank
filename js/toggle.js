@@ -1,4 +1,4 @@
-let addMoney = document.getElementById('add-money')
+let addMoney = document.getElementById('aded-money')
 let cashout = document.getElementById('cash-out')
 let moneyAdd = document.getElementById('money-add')
 let outCash = document.getElementById('out-cash')
