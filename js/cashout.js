@@ -18,6 +18,32 @@ cashBtn.addEventListener('click', function(e){
         if(parseInt(cashPin.value) === 1234){
             if(cashAcc.value.length === 11){
                 balence.innerText = Math.abs(sub)
+                
+                
+                let divv = document.createElement('div')
+                divv.innerHTML = `
+                        <div class="flex justify-between items-center mt-5 bg-white px-4 py-3 rounded-xl">
+                                        <div class="flex items-center">
+                                            <div class="bg-gray-200 p-3 rounded-full mr-2">
+                                                <img class="w-[30px]" src="assets/send1.png" alt="">
+                                            </div>
+                                            <div>
+                                                <h3 class="font-bold text-lg text-gray-600">Bank Deposit</h3>
+                                                <p class="text-[13px] text-gray-400">Bkash 500tk time</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-ellipsis-vertical text-xl"></i>
+                                        </div>
+                                    </div>
+                    `
+
+                    transContainer.appendChild(divv)
+
+                    setInputValueNun('cash-acc')
+                    setInputValueNun('cash-amount')
+                    setInputValueNun('cash-pin')
+
             }else{
                 alert('Enter the correct account number')
             }
@@ -27,4 +53,8 @@ cashBtn.addEventListener('click', function(e){
     }else{
         alert('Enter the amount')
     }
+
+
+    
+
 })
