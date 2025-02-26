@@ -12,17 +12,19 @@ addButton.addEventListener('click', function(e){
     let sum = convertAmount + convertBalance
 
     // console.log(convertAmount, convertBalance)
-    if(amount.value !== ''){
-        if(parseInt(pin.value) === 1234){
-            if(accNumber.value.length === 11){
+    
+
+    if(accNumber.value.length === 11){
+        if(amount.value !== ''){
+            if(parseInt(pin.value) === 1234){ 
                 balence.innerText = sum
             }else{
-                alert('Enter the correct account number')
+                alert('Enter the correct PIN')
             }
         }else{
-            alert('Enter the correct PIN')
+            alert('Enter the amount')
         }
     }else{
-        alert('Enter the amount')
+        alert('Enter the correct account number')
     }
 })
